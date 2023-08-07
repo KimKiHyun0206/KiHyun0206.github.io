@@ -4,11 +4,26 @@ body {
 }
 
 hr {
-
+    background: black;
     height: 1px;
     border: 0;
 
 }
+
+table {
+    width: 100%;
+    border-top: 1px solid #444444;
+    border-collapse: collapse;
+}
+th, td {
+    border-bottom: 1px solid #444444;
+    border-left: 1px solid #444444;
+    padding: 10px;
+}
+th:first-child, td:first-child {
+    border-left: none;
+}
+
 
 
 /*first*/
@@ -53,25 +68,46 @@ div.study > pre > code {
 }
 
 div.study > div.important {
-    background: darkgray;
+    padding: 1%;
+    background: aliceblue;
+    border-radius: 30px 10px;
+    margin: 1%;
 }
 
-div > table {
-    width: 100%;
-    border-top: 1px solid #444444;
-    border-collapse: collapse;
+div.study > div.important > p {
+    font-weight: bold;
 }
 
-div > table > th, td{
-    border-bottom: 1px solid #444444;
-    border-left: 1px solid #444444;
-    padding: 10px;
+
+div.study > div.notice {
+    padding: 3%;
+    background: #EDE4FF;
+    border-radius: 20px 10px;
+    margin: 2%;
 }
 
-div > table > th:first-child, td:first-child{
-    border-left: none;
+div.study > div.notice > h3 {
+    color: #A076F9;
+    margin-left: 1%;
 }
 
+div.study > div.notice > p.concept {
+    padding: 1%;
+    border-radius: 20px 10px;
+    background: #D7BBF5;
+    font-weight: bold;
+}
+
+div.study > div.notice > p {
+    padding: 1%;
+}
+
+div.study > div.addition {
+    padding: 1%;
+    background: #FFF0F5;
+    border-radius: 10px 10px 10px 10px;
+    margin: 2%;
+}
 
 
 /*end*/

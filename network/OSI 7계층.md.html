@@ -16,11 +16,350 @@
 
 <div class="study">
     <h1>OSI 7 계층</h1>
+    <hr>
+    <div class="important">
+        <p>💡 네트워크에서 통신이 일어나는 과정을 7 단계로 나눈 것</p>
+    </div>
+    <ul>
+        <li><strong>나눈 이유</strong> : 통신이 일어나는 과정이 단계별로 파악될 수 있기 때문이다</li>
+        <li>흐름을 한 눈에 알아보기 쉽다</li>
+        <li>사람들이 이해하기 쉽다</li>
+        <li>소프트웨어 중 특정한 곳에 이상이 생기면 다른 단계의 장비 및 소프트웨어를 건드리지 않고도 이상이 생긴 단계만 고칠 수 있다</li>
+    </ul>
+
+    <br>
+
+    <h2>OSI 계층 : 계층 단계</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>층</th>
+            <th>한글명</th>
+            <th>영문명</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>7</th>
+            <th>응용</th>
+            <th>Application</th>
+        </tr>
+        <tr>
+            <th>6</th>
+            <th>표현</th>
+            <th>Presentation</th>
+        </tr>
+        <tr>
+            <th>5</th>
+            <th>세션</th>
+            <th>Session</th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <th>전송</th>
+            <th>Transport</th>
+        </tr>
+        <tr>
+            <th>3</th>
+            <th>네트워크</th>
+            <th>Network</th>
+        </tr>
+        <tr>
+            <th>2</th>
+            <th>데이터 링크</th>
+            <th>Data Link</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>믈리</th>
+            <th>Physical</th>
+        </tr>
+        </tbody>
+
+    </table>
+
+    <br>
+
+    <h1>OSI 7 계층 : 1 계층 - 물리</h1>
+    <hr>
+
+    <div class="important">
+        <p>💡 이 계층에서는 주로 전기적, 기계적, 기능적인 특성을 이용해서 통신 케이블로 데이터를 전송하게 된다</p>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>항목</th>
+            <th>설명</th>
+        </tr>
+        </thead>
+        <tbody style="text-align: left">
+        <tr>
+            <th>통신 단위</th>
+            <th>비트</th>
+        </tr>
+        <tr>
+            <th>기능</th>
+            <th>단순히 데이터를 전달하는 역할만 한다<br>데이터를 전시적인 신호로 변환해서 주고 받는 기능만 한다</th>
+        </tr>
+        <tr>
+            <th>오류 검출</th>
+            <th>X</th>
+        </tr>
+        <tr>
+            <th>장비</th>
+            <th>통신 케이블, 리피터, 허브</th>
+        </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li><strong>통신 단위</strong> : 비트</li>
+        <ul>
+            <li>따라서 1과 0으로만 나타내진다</li>
+            <li>전기적인 On / Off 상태라고 생각하면 된다</li>
+        </ul>
+    </ul>
+
+    <br>
+
+    <h1>OSI 7 계층 : 2 계층 - 데이터 링크</h1>
+    <div class="important">
+        <p>💡 물리 계층을 통해 송수신되는 정보의 오류와 흐름을 관리하여 안전한 정보의 전달을 수행할 수 있도록 돕는다</p>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>항목</th>
+            <th>설명</th>
+        </tr>
+        </thead>
+        <tbody style="text-align: left">
+        <tr>
+            <th>통신 단위</th>
+            <th>프레임</th>
+        </tr>
+        <tr>
+            <th>기능</th>
+            <th>안전한 정보를 전달할 수 있도록 돕는다</th>
+        </tr>
+        <tr>
+            <th>통신 방법</th>
+            <th>MAC 주소를 사용하여 통신한다</th>
+        </tr>
+        <tr>
+            <th>오류 검출</th>
+            <th>오류를 검출하며 재전송하는 기능도 가진다</th>
+        </tr>
+        <tr>
+            <th>장비</th>
+            <th>브리지, 스위치</th>
+        </tr>
+        </tbody>
+    </table>
+    <ul>
+        <li>MAC 주소를 사용하는 이유는 이 계층의 장비가 MAC 주소를 사용하기 때문이다</li>
+    </ul>
+    <div class="notice">
+        <h3>신뢰성 있는 전송</h3>
+        <p class="concept">Point-To-Point 간 신뢰성 있는 전송을 보장하기 위한 계층이다</p>
+        <ul>
+            <li>CRC 기반의 오류 제어와 흐름 제어</li>
+            <li>네트워크 위의 개체들 간 데이터를 전달하고, 물리 계층에서 발생할 수 있는 오류를 찾아낸다</li>
+            <li>찾아낸 오류를 수정하는데 필요한 기능적, 절차적 수단을 제공한다</li>
+        </ul>
+    </div>
+    <div class="notice">
+        <h3>주소값</h3>
+        <p class="concept">물리적으로 할당 받는데, 이는 네트워크 카드가 만들어질 때부터 MAC 주소가 정해져 있다는 뜻이다</p>
+        <ul>
+            <li>주소 체계 : 계층이 없는 단일 구조</li>
+            <ul>
+                <li>예를 들어 이더넷이 있다</li>
+            </ul>
+            <li>이 외에도  Point-To-Point Protocol, Packet Switching Network, Local Network Protocol 등이 있다</li>
+            <li>네트워크 브릿지나 스위치 등이 이 계층에서 동작하며, 직접 이어진 곳에만 연결할 수 있다</li>
+        </ul>
+    </div>
+    <div class="notice">
+        <h3>프레임에 주소를 부여하는 이유</h3>
+        <ul>
+            <li>MAC은 물리적 주소이다</li>
+            <li>이는 에러 컴출, 재전송, 흐름 제어에 쓰인다</li>
+        </ul>
+    </div>
+
+    <br>
+
+    <h1>OSI 7 계층 : 3 계층 - 네트워크</h1>
+    <p class="important">💡 라우팅을 통해 데이터를 목적지까지 가장 안전하고 빠르게 전달한다</p>
+    <ul>
+        <li>실제 데이터의 전송을 담당한다</li>
+        <li>여러 개의 노드를 거칠 때마다 경로를 찾아주는 역할을 하는 계층이다</li>
+        <li>다양한 길이의 데트워크들을 통해 전달한다</li>
+        <li>이 과정에서 전송 계층이 요구하는 서비스 품질을 제공하기 위한 기능적, 절차적 수단을 제공한다</li>
+    </ul>
+
+    <div class="notice">
+        <h3>Routing</h3>
+        <p class="concept">데이터를 목적지까지 가장 안전하고 빠르게 전달한다</p>
+        <ol>
+            <li>경로를 선택하고 주소를 정한다</li>
+            <li>경로에 따라 패킷을 전달한다</li>
+        </ol>
+        <ul>
+            <li>2 계층 장비 중에서 스위치라는 장비에 라우팅 기능을 장착한 L3 Switch 가 있다</li>
+        </ul>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>항목</th>
+            <th>설명</th>
+        </tr>
+        </thead>
+        <tbody style="text-align: left">
+        <tr>
+            <th>통신 단위</th>
+            <th>패킷</th>
+        </tr>
+        <tr>
+            <th>기능</th>
+            <th>- 라우팅을 통해 데이터를 목적지까지 안전하게 전달한다<br>- 패킷에 IP를 부여하고, 최적의 경로를 찾는다</th>
+        </tr>
+        <tr>
+            <th>통신 방법</th>
+            <th>TCP/IP 상에서 IP 계층을 통해 통신한다</th>
+        </tr>
+        <tr>
+            <th>오류 검출</th>
+            <th>O</th>
+        </tr>
+        <tr>
+            <th>장비</th>
+            <th>라우터</th>
+        </tr>
+        </tbody>
+    </table>
+    <ul>
+        <li><strong>패킷</strong> : 전송 계층에서 전달된 세그먼트 헤더에 출발/도착지의 IP 주소를 붙인다</li>
+    </ul>
+
+    <table>
+        <thead>
+        <tr>
+            <th>네트워크 계층이 수행하는 것</th>
+            <th>설명</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>라우팅</th>
+            <th>데이터를 목적지까지 가장 안전하고 빠르게 전달하는 방법을 찾는다</th>
+        </tr>
+        <tr>
+            <th>흐름 제어</th>
+            <th>- 발신자와 수신자의 전송 속도를 맞추는 것을 의미한다<br>- 너무 빠르게 데이터를 보내면 데이터가 손실될 수 있다<br>- 반대로 너무 느리게 보내면 답답하다</th>
+        </tr>
+        <tr>
+            <th>세그멘테이션</th>
+            <th>- 받은 데이터를 측정 사이즈로 나누는 기능을 수행한다<br>- 이 경우 완전한 전송이 되지 않더라도 일부를 볼 수 있게 하고, 데이터 손실률도 줄일 수 있다</th>
+        </tr>
+        <tr>
+            <th>오류 제어</th>
+            <th>오류가 생긴 데이터를 다시 보내준다</th>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <br>
+
+    <h1>OSI 7 계층 : 4 계층 - 전송</h1>
+    <div class="important">
+        <p>💡 통신을 활성화하기 위한 계층이다. 보통 TCP 프로토콜을 이용하며, 포트를 열어서 응용 프로그램들이 전송할 수 있게 한다</p>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>항목</th>
+            <th>설명</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>통신 단위</th>
+            <th>프레임</th>
+        </tr>
+        <tr>
+            <th>기능</th>
+            <th>데이터가 도착하면 이 계층에서 해당 데이터를 하나로 합쳐서 5계층으로 전달한다</th>
+        </tr>
+        <tr>
+            <th>특징</th>
+            <th>- 특정 연결이 유효성을 제어한다<br>- 일부 프로토콜은 상태 개념이 있고, 연결 기반이다<br>- 이는 전송 계층이 패킷들의 전송이 유효한지 확인하고 전송 실패한 패킷들은 다시 전송한다는 것을 의미한다</th>
+        </tr>
+        <tr>
+            <th>통신 방법</th>
+            <th>TCP/IP 프로토콜을 이용한다. 때때로 Port 를 사용하기도 한다</th>
+        </tr>
+        <tr>
+            <th>오류 검출 및 흐름 제어</th>
+            <th>- Ent-to-End 오류 제어 및 흐름 제어를 제공한다<br>- TCP/IP 프로토콜을 사용한다</th>
+        </tr>
+        <tr>
+            <th>오류 검출 방밥</th>
+            <th>시퀸스 넘버 기반의 오류 제어 방식을 사용한다</th>
+        </tr>
+        <tr>
+            <th>오류 검출 및 흐름 제어의 이점</th>
+            <th>- 사용자들이 신뢰성 있는 데이터를 주고 받을 수 있다<br>- 상위 계층들이 데이터 전달의 유효성이나 효율성을 생각하지 않도록 해준다</th>
+        </tr>
+        <tr>
+            <th>장비</th>
+            <th>브리지, 스위치</th>
+        </tr>
+        </tbody>
+    </table>
+    <ul>
+        <li>상위 계층들이 데이터 전달의 유효성이나 효율성을 생각하지 않아도 되는 이유는 라우팅을 통해 최적의 경로와 유효한 경로를 찾았기 때문이다</li>
+        <li>가장 잘 알려진 전송 계층의 예시는 TCP 이다</li>
+    </ul>
+
+    <br>
+
+    <h1>OSI 7 계층 : 5 계층 - 세션</h1>
+    <div class="important">
+        <p>💡 데이터가 통신하기 위한 논리적인 연결을 말한다</p>
+    </div>
+    <ul>
+        <li>하지만 4계층에서도 연결을 맺고 종료할 수 있기 때문에 우리가 어느 계층에서 통신이 끊어졌나 판단하기에는 한계가 있다</li>
+        <li>그러므로 세션 계층은 4계층과 무관하게 응용 프로그램 관점에서 봐야 한다</li>
+        <li>이 계층에서 TCP/IP 세션을 만들고 없애는 책임을 가진다</li>
+    </ul>
+
+    <div class="addition">
+        <ul>
+            <li>통신하는 사용자들을 동기화하고 오류 복구 명령들을 일괄적으로 해준다</li>
+            <li>통신을 하기 위한 세션을 확립, 유지, 중단은 운영체제가 해준다</li>
+        </ul>
+    </div>
+
+    <div class="notice">
+        <h3>5 계층 - 세션 계층 : 응용 프로그램 관점에서 본 세션 계층</h3>
+        <p>💡 양 끝단의 응용 프로세스가 통신을 관리하기 위한 방법을 제공한다</p>
+        <ul>
+            <li>동시 송수신 방법, 반이중 방식, 전이중 방식의 통신</li>
+            <li>체크 포인팅과 유지, 종류, 재시작 과정 등을 수행한다</li>
+        </ul>
+    </div>
 
 
 </div>
-
-
 
 </body>
 </html>
