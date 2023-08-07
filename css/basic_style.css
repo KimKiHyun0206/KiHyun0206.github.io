@@ -1,37 +1,90 @@
-body{
+body {
 
     margin: 2%;
 }
 
-hr{
+hr {
 
     height: 1px;
     border: 0;
 
 }
 
-div.first{
+
+/*first*/
+
+div.first {
 
     padding: 2%;
     margin-bottom: 10%;
 }
-div.first > h1{
+
+div.first > h1 {
 
 }
 
-div.first > p{
+div.first > p {
     padding: 5px;
 }
 
 
+/*study*/
 
-div.study{
+div.study {
     padding: 2%;
     margin-bottom: 10%;
 }
-div.study > h1{
+
+div.study > h1 {
 
 }
-div.study > p{
+
+div.study > p {
+    padding: 5px;
+}
+
+div.study > pre {
+    background: #252B48;
+    margin: 5%;
+}
+
+div.study > pre > code {
+    color: white;
+}
+
+div.study > div.important {
+    background: darkgray;
+}
+
+div > table {
+    width: 100%;
+    border-top: 1px solid #444444;
+    border-collapse: collapse;
+}
+
+div > table > th, td{
+    border-bottom: 1px solid #444444;
+    border-left: 1px solid #444444;
+    padding: 10px;
+}
+
+div > table > th:first-child, td:first-child{
+    border-left: none;
+}
+
+
+
+/*end*/
+
+div.end{
+    padding: 2%;
+    margin-bottom: 10%;
+}
+
+div.end > h1 {
+
+}
+
+div.end > p {
     padding: 5px;
 }
