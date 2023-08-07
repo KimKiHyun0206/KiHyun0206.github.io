@@ -51,7 +51,7 @@ div.study {
 }
 
 div.study > h1 {
-
+    margin-top: 10%;
 }
 
 div.study > p {
@@ -80,7 +80,7 @@ div.study > div.important > p {
 
 
 div.study > div.notice {
-    padding: 3%;
+    padding: 5px 10px;
     background: #EDE4FF;
     border-radius: 20px 10px;
     margin: 2%;
@@ -92,7 +92,7 @@ div.study > div.notice > h3 {
 }
 
 div.study > div.notice > p.concept {
-    padding: 1%;
+    padding: 10px 10px;
     border-radius: 20px 10px;
     background: #D7BBF5;
     font-weight: bold;
