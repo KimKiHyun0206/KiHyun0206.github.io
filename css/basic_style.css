@@ -1,21 +1,37 @@
 body{
-    background: #F8F0E5;
+
     margin: 2%;
 }
 
 hr{
-    background: #DAC0A3;
+
     height: 1px;
     border: 0;
 
 }
 
-H1{
-    color: #102C57;
+div.first{
+
+    padding: 2%;
+    margin-bottom: 10%;
+}
+div.first > h1{
+
 }
 
-div.first{
-    margin: 0 auto;
-    background: #EADBC8;
+div.first > p{
+    padding: 5px;
+}
+
+
+
+div.study{
     padding: 2%;
+    margin-bottom: 10%;
+}
+div.study > h1{
+
+}
+div.study > p{
+    padding: 5px;
 }
