@@ -1,6 +1,13 @@
 body{
     background: #F8F0E5;
-    margin: 5%;
+    margin: 2%;
+}
+
+hr{
+    background: #DAC0A3;
+    height: 1px;
+    border: 0;
+
 }
 
 H1{
@@ -9,4 +16,6 @@ H1{
 
 div.first{
     margin: 0 auto;
+    background: #EADBC8;
+    padding: 2%;
 }
