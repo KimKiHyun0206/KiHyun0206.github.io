@@ -4,6 +4,13 @@ body {
     padding-right: 10%;
 }
 
+h1{
+    color: #27374D;
+}
+h2{
+    color: #27374D;
+}
+
 hr {
     background: black;
     height: 1px;
@@ -86,32 +93,33 @@ div.study > pre > code {
 
 div.study > div.important {
     padding: 1%;
-    background: aliceblue;
+    background: #DDE6ED;
     border-radius: 30px 10px;
     margin: 1%;
 }
 
 div.study > div.important > p {
     font-weight: bold;
+    color: #27374D;
 }
 
 
 div.study > div.notice {
     padding: 5px 10px;
-    background: #EDE4FF;
+    background: #DDE6ED;
     border-radius: 20px 10px;
     margin: 2%;
 }
 
 div.study > div.notice > h3 {
-    color: #A076F9;
+    color: #27374D;
     margin-left: 1%;
 }
 
 div.study > div.notice > p.concept {
     padding: 10px 10px;
     border-radius: 20px 10px;
-    background: #D7BBF5;
+    background: #9DB2BF;
     font-weight: bold;
 }
 
@@ -120,10 +128,15 @@ div.study > div.notice > p {
 }
 
 div.study > div.addition {
-    padding: 1%;
-    background: #FFF0F5;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: #DDE6ED;
     border-radius: 10px 10px 10px 10px;
     margin: 2%;
+}
+
+div.study > div.addition > p {
+    padding-left: 10px;
 }
 
 
