@@ -1,221 +1,3 @@
-body {
-    background: #FFF;
-    color: #444;
-    font-family: 'Lato', sans-serif;
-    margin: 0 auto;
-    overflow-X: hidden;
-    overflow-Y: auto;
-    padding: 0;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #FF5959;
-}
-
-ul,
-li {
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-}
-
-ul li {
-    display: inline-block;
-}
-
-header,
-section,
-.container,
-.box {
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-}
-
-header {
-    background: #FFF;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
-    height: 60px;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: initial;
-    z-index: 9;
-    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
-    -moz-transform: matrix(1, 0, 0, 1, 0, 0);
-    transform: matrix(1, 0, 0, 1, 0, 0);
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-}
-
-html.active header {
-    -webkit-transform: matrix(1, 0, 0, 1, -320, 0);
-    -moz-transform: matrix(1, 0, 0, 1, -320, 0);
-    transform: matrix(1, 0, 0, 1, -320, 0);
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-}
-
-header .box {
-    display: none;
-    height: 40px;
-    line-height: 40px;
-    margin: 0 80px;
-    padding: 10px;
-}
-
-header .box > ul {
-    display: flex;
-}
-
-header .box > ul li {
-    font-size: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-#overlay {
-    background: #000;
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    opacity: 0;
-    overflow: hidden;
-    position: fixed;
-    right: 0;
-    top: 0;
-    visibility: hidden;
-    width: 100%;
-    z-index: 99;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-}
-
-html.active #overlay {
-    opacity: .65;
-    visibility: visible;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-}
-
-#home,
-.logo > a {
-    border-radius: 8px;
-    box-shadow: inset 0 0 0 2px #FFF, inset 0 0 0 3px #FF5959;
-    color: #FF5959;
-    display: block;
-    font-size: 32px;
-    height: 36px;
-    left: 0;
-    line-height: 36px;
-    margin: 10px 20px 10px 30px;
-    overflow: hidden;
-    padding: 2px;
-    position: fixed;
-    text-align: center;
-    top: 0;
-    width: 36px;
-}
-
-.logo {
-    font-size: 32px;
-    height: 40px;
-    line-height: 40px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 10px;
-    position: relative;
-    width: initial;
-}
-
-.logo > a {
-    display: inline-block;
-    margin: 0 auto 0 10px;
-    position: relative;
-}
-
-.sign-up {
-    background: #FF5959;
-    border: 1px solid #FF5959;
-    color: #FFF;
-    font-family: 'Abel', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    height: 40px;
-    letter-spacing: 1px;
-    line-height: 40px;
-    margin: 10px;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-    text-align: center;
-}
-
-.sign-up:hover {
-    background: #FFF;
-}
-
-.sign-up a {
-    display: block;
-}
-
-.sign-up span {
-    margin: 0 auto 0 8px;
-}
-
-#close-menu {
-    border: 1px solid;
-    border-radius: 20px;
-    color: #333;
-    cursor: pointer;
-    display: block;
-    height: 20px;
-    line-height: 20px;
-    margin: 15px 20px 15px auto;
-    padding: 4px;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: 20px;
-}
-
-section {
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    z-index: 2;
-    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
-    -moz-transform: matrix(1, 0, 0, 1, 0, 0);
-    transform: matrix(1, 0, 0, 1, 0, 0);
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-}
-
-#intro {
-    background-image: url('https://goo.gl/BlNbJE');
-}
-
-#portfolio {
-    background-image: url('https://goo.gl/Uwkg0I');
-}
-
-#blog {
-    background-image: url('https://goo.gl/Wy3PSL');
-}
-
 html,
 body {
     background: #FFF;
@@ -331,8 +113,8 @@ html.active #overlay {
 #home,
 .logo > a {
     border-radius: 8px;
-    box-shadow: inset 0 0 0 2px #FFF, inset 0 0 0 3px #FF5959;
-    color: #FF5959;
+    box-shadow: inset 0 0 0 2px #FFF, inset 0 0 0 3px  #27374D;
+    color:  #27374D;
     display: block;
     font-size: 32px;
     height: 36px;
@@ -424,15 +206,15 @@ section {
 }
 
 #intro {
-    background-image: url('https://goo.gl/BlNbJE');
+    color: black;
 }
 
 #portfolio {
-    background-image: url('https://goo.gl/Uwkg0I');
+
 }
 
 #blog {
-    background-image: url('https://goo.gl/Wy3PSL');
+
 }
 
 html.active,
