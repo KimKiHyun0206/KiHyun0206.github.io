@@ -1,5 +1,5 @@
 body {
-
+    width: 80%;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -106,9 +106,8 @@ div.study > div.important > p {
 
 div.study > div.notice {
     padding: 5px 10px;
-    background: #DDE6ED;
-    border-radius: 20px 10px;
     margin: 2%;
+    border: 1px solid #27374D;
 }
 
 div.study > div.notice > h3 {
@@ -119,7 +118,7 @@ div.study > div.notice > h3 {
 div.study > div.notice > p.concept {
     padding: 10px 10px;
     border-radius: 20px 10px;
-    background: #9DB2BF;
+    background: #DDE6ED;
     font-weight: bold;
 }
 
