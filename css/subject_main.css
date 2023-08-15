@@ -1,7 +1,8 @@
 body{
     margin: 0 auto;
-    width: 75%;
+    width: 100%;
 }
+
 
 table {
     width: 100%;
@@ -22,7 +23,20 @@ table > thead > tr {
     background-color: #9DB2BF;
 }
 
-
 tr > th:nth-child(odd){
-    width: 10%;
+    width : 5%;
+}
+
+tbody > tr > th:nth-child(even){
+    text-align: left;
+    padding-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #444444;
 }
