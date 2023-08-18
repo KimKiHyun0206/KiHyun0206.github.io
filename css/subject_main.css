@@ -9,6 +9,8 @@ table {
     border-top: 1px solid #444444;
     border-collapse: collapse;
     margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 th, td {
     border-bottom: 1px solid #444444;
