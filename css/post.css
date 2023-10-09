@@ -1,0 +1,110 @@
+body {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h1 {
+    color: #27374D;
+}
+
+h2 {
+    color: #27374D;
+}
+
+hr {
+    background: black;
+    height: 1px;
+    border: 0;
+
+}
+
+br {
+    margin: 10%;
+}
+
+table {
+    width: 90%;
+    border-top: 1px solid #444444;
+    border-collapse: collapse;
+    margin: 5%;
+}
+
+th, td {
+    border-bottom: 1px solid #444444;
+    border-left: 1px solid #444444;
+    padding: 10px;
+}
+
+th:first-child, td:first-child {
+    border-left: none;
+}
+
+table > thead > tr {
+    background-color: #9DB2BF;
+}
+
+tr:nth-child(even) {
+    background-color: #DDE6ED;
+}
+
+
+div {
+    margin-bottom: 10%;
+}
+
+div > p {
+    padding: 5px;
+}
+
+div > h1 {
+    margin-top: 10%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+}
+
+div > div {
+    padding: 1px 3%;
+    border-left: #252B48 solid 5px;
+    background-color: #DDE6ED;
+}
+
+div > div > p {
+    font-weight: bold;
+    color: #27374D;
+}
+
+div > div > h3 {
+    color: #252B48;
+}
+
+pre {
+    background-color: #27374D;
+    margin: 0 auto;
+}
+
+pre > code {
+    color: white;
+    font-size: 15px;
+}
+
+p > code {
+    background-color: #526D82;
+    color: white;
+    padding: 2px 5px;
+    margin-left: 1px;
+    margin-right: 1px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+p > strong {
+    color: #27374D;
+    font-weight: bold;
+}
+
+p > span {
+    color: #FF5959;
+    font-weight: bold;
+}
