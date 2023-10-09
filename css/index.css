@@ -389,3 +389,19 @@ html.active menu .container {
         font-size: 3em
     }
 }
+
+.content{
+    margin: 10%;
+}
+
+.talk{
+    margin-bottom: 20%;
+}
+
+.talk > h1{
+    color: #27374D;
+}
+
+.talk > h3{
+    color: #27374D;
+}
