@@ -77,3 +77,7 @@ pre.code-javascript code {
 pre.code-jquery code {
     color: #4dd0e1;
 }
+
+pre.code-java code {
+    color: #CEE6F3;
+}
