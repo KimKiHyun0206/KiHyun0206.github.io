@@ -50,18 +50,19 @@ tr:nth-child(even) {
 }
 
 
-div {
-    margin-bottom: 10%;
-}
-
 div > p {
     padding: 5px;
 }
 
 div > h1 {
+    color: #27374D;
     margin-top: 10%;
     padding-bottom: 15px;
     border-bottom: 1px solid black;
+}
+
+div > h3 {
+    color: #27374D;
 }
 
 div > div {
@@ -69,6 +70,17 @@ div > div {
     border-left: #252B48 solid 5px;
     background-color: #DDE6ED;
 }
+
+div > div > div {
+    background-color: #9DB2BF;
+}
+
+div > div > div > p {
+    font-weight: bold;
+    color: #27374D;
+}
+
+
 
 div > div > p {
     font-weight: bold;
